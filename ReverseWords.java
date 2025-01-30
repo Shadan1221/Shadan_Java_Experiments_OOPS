@@ -1,7 +1,7 @@
 package Experiment3;
 
 import java.util.StringTokenizer;
-
+import java.util.*;
 public class ReverseWords {
     public static String reverseWords(String s) {
         StringTokenizer st = new StringTokenizer(s);
@@ -13,7 +13,11 @@ public class ReverseWords {
     }
 
     public static void main(String[] args) {
-        String s = "This is decent";
+        Scanner ob=new Scanner(System.in);
+        String s;
+        System.out.println("Enter the String");
+        s=ob.nextLine();
         System.out.println("Reversed: " + reverseWords(s));
+        ob.close();
     }
 }
